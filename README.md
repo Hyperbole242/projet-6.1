@@ -59,7 +59,7 @@ Ce projet met en avant un salon de coiffure avec un design moderne et responsive
    ```
 2. Ouvrir le projet dans un navigateur :
    ```bash
-   acceuil.html
+   index.html
    ```
 
 ---
