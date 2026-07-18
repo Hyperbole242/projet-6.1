@@ -55,11 +55,11 @@ Ce projet met en avant un salon de coiffure avec un design moderne et responsive
 
 1. Cloner le repo :
    ```bash
-   git clone https://github.com/Hyperbole242/projet-vitrine.git
+   git clone https://github.com/Hyperbole242/projet-6.1.git
    ```
 2. Ouvrir le projet dans un navigateur :
    ```bash
-   index.html
+   acceuil.html
    ```
 
 ---
