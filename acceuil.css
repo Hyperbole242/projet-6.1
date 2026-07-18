@@ -1,0 +1,499 @@
+/* 🌐 Base */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #f0fdfa, #e0f2fe);
+  color: #1f2937;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ✨ Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🔝 Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: linear-gradient(270deg, #0ea5e9, #0369a1, #facc15);
+  background-size: 600% 600%;
+  animation: gradientMove 12s ease infinite;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo stylisé */
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.logo-main {
+  background: linear-gradient(90deg, #facc15, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 10px rgba(250, 204, 21, 0.6);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.logo-sub {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0ea5e9, #0369a1);
+  padding: 4px 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+  transform: rotate(-2deg);
+}
+
+/* Navigation */
+.nav a {
+  margin: 0 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav a:hover {
+  color: #facc15;
+  transform: scale(1.1);
+}
+
+/* 🏠 Hero */
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+  background: url('images/salon.jpg') center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #0ea5e9, #facc15, #f59e0b);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.cta-btn:hover {
+  transform: perspective(600px) rotateX(10deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* 📌 Sections */
+section {
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* About */
+.about h3 {
+  font-size: 1.6rem;
+  color: #0ea5e9;
+  margin-bottom: 16px;
+}
+
+/* Témoignages */
+.testimonials h3 {
+  font-size: 1.6rem;
+  color: #0369a1;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin: 16px auto;
+  max-width: 500px;
+  font-style: italic;
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+/* Galerie */
+.gallery h3 {
+  font-size: 1.6rem;
+  color: #0ea5e9;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.4s;
+}
+
+.gallery-grid img:hover {
+  transform: perspective(800px) rotateY(8deg) scale(1.08);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+}
+
+/* Équipe */
+.team {
+  background: linear-gradient(120deg, #fef9c3, #fde68a);
+}
+
+.team h3 {
+  font-size: 1.6rem;
+  color: #f59e0b;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.member {
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+.member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  transition: transform 0.4s;
+}
+
+.member:hover {
+  transform: scale(1.08);
+}
+
+.member h4 {
+  margin-top: 14px;
+  color: #0369a1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(90deg, #0369a1, #0ea5e9);
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .nav a { margin: 0 20px; }
+  .hero { padding: 160px 40px; }
+}
+
+/* Services */
+.services h3 {
+  font-size: 1.8rem;
+  color: #0ea5e9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.4s, box-shadow 0.4s;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: perspective(800px) rotateX(6deg) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card h4 {
+  margin-top: 10px;
+  color: #0369a1;
+  font-size: 1.2rem;
+}
+
+.card .avis {
+  margin-top: 10px;
+  font-style: italic;
+  color: #f59e0b;
+}
+
+/* Mise en avant */
+.card.highlight {
+  border: 3px solid #facc15;
+  box-shadow: 0 12px 28px rgba(250, 204, 21, 0.4);
+}
+
+.card .badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #facc15;
+  color: #1f2937;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* Tarifs */
+.tarifs h3 {
+  font-size: 1.8rem;
+  color: #0ea5e9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tarifs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.tarif {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.4s, box-shadow 0.4s;
+  position: relative;
+}
+
+.tarif:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.tarif h4 {
+  color: #0369a1;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.tarif .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f59e0b;
+  margin-bottom: 16px;
+}
+
+.tarif .cta-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #0ea5e9, #facc15, #f59e0b);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.tarif .cta-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Mise en avant */
+.tarif.highlight {
+  border: 3px solid #facc15;
+
+
+/* Contact */
+.contact h3 {
+  font-size: 1.8rem;
+  color: #0ea5e9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Champs améliorés */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.6);
+  border-radius: 12px;
+  margin: 12px 0;
+  padding: 8px 12px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.input-group:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(14,165,233,0.3);
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #0ea5e9;
+}
+
+.input-group input,
+.input-group textarea {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Focus lumineux */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom: 2px solid #facc15;
+  box-shadow: 0 0 10px rgba(250,204,21,0.6);
+}
+
+/* Bouton CTA */
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(270deg, #0ea5e9, #facc15, #f59e0b);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+/* Infos pratiques */
+.infos h3 {
+  font-size: 1.8rem;
+  color: #0369a1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.infos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.info {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.3s;
+}
+
+.info:hover {
+  transform: scale(1.05);
+}
+
+.info h4 {
+  color: #0ea5e9;
+  margin-bottom: 8px;
+}
