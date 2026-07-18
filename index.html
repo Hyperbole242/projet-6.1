@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Redirection — Coiffure Congo</title>
-  <meta http-equiv="refresh" content="0; url=acceuil.html">
-  <script>window.location.replace('acceuil.html');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coiffure Congo</title>
+  <link rel="stylesheet" href="acceuil.css">
 </head>
 <body>
-  <p>Redirection vers <a href="acceuil.html">acceuil.html</a>. Si vous n'êtes pas redirigé(e), cliquez sur le lien.</p>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">
+      <span class="logo-main">Coiffure</span>
+      <span class="logo-sub">Congo</span>
+    </h1>
+    <nav class="nav">
+      <a href="acceuil.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Bienvenue chez Coiffure Congo</h2>
+      <p>Votre beauté, notre passion. Découvrez nos services professionnels.</p>
+      <a href="services.html" class="cta-btn">Voir nos services</a>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section class="about fade-in">
+    <h3>À propos</h3>
+    <p>Nous sommes un salon de coiffure local offrant des coupes modernes et des soins capillaires adaptés à tous.</p>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="testimonials fade-in">
+    <h3>Ce que disent nos clients</h3>
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ “Service impeccable, je suis ressortie transformée !”</p>
+      <span>- Marie</span>
+    </div>
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ “Ambiance chaleureuse et équipe professionnelle.”</p>
+      <span>- Jean</span>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section class="gallery fade-in">
+    <h3>Nos réalisations</h3>
+    <div class="gallery-grid">
+      <img src="images/style1.jpg" alt="Style 1" loading="lazy">
+      <img src="images/style2.jpg" alt="Style 2" loading="lazy">
+      <img src="images/style3.jpg" alt="Style 3" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section class="team fade-in">
+    <h3>Notre équipe</h3>
+    <div class="team-grid">
+      <div class="member">
+        <img src="images/team1.jpg" alt="Coiffeuse A" loading="lazy">
+        <h4>Alice</h4>
+        <p>Spécialiste colorations</p>
+      </div>
+      <div class="member">
+        <img src="images/team2.jpg" alt="Coiffeur B" loading="lazy">
+        <h4>David</h4>
+        <p>Expert coupes modernes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Coiffure Congo | Brazzaville</p>
+    <p>Tél: +242 06 123 4567 | Email: contact@coiffurecongo.com</p>
+  </footer>
+
 </body>
 </html>
