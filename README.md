@@ -84,5 +84,6 @@ Le site est déployé via **GitHub Pages** :
 ## ✨ Auteur
 
 - 👤 **Osias Arthur Miere**  
-- 🔗 LinkedIn [(linkedin.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fwww.linkedin.com%2Fin%2Fosias-arthur-miere")  
-- 🔗 GitHub [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2FHyperbole242")
+- 🔗 LinkedIn https://www.linkedin.com/in/osias-arthur-miere-45854a415?utm_source=share_via&utm_content=profile&utm_medium=member_android
+- 🔗 GitHub [text](https://github.com/Hyperbole242)
+
